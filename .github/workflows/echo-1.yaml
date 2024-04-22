@@ -1,6 +1,10 @@
 name: Message Echo 1
 
 on: 
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - master
   workflow_dispatch:
     inputs:
       message:
