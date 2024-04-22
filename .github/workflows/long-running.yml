@@ -1,6 +1,10 @@
 name: Long running
 
 on: 
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
